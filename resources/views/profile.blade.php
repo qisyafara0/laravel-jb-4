@@ -8,11 +8,11 @@
             <h1> Profil Pegguna </h1>
         </div>
         <div class="card-body">
-            <img src="{{ asset('image/' .$profile['profile_picture']) }}" alt="carmen.jpg" width="150">
+            <img src="{{ asset('image/' .$profile['profile_picture']) }}" alt="Profile Picture" width="150">
             <h3> {{$profile[ 'name']}} </h3>
             <p> Email : {{$profile['email']}}</p>
-            <p> Bio: {{&profile['bio']}}</p>
-            @if(count($profile['skils']) > 0 )
+            <p> Bio: {{$profile['bio']}}</p>
+            @if(count($profile['skills']) > 0 )
             <h5> Skill: </h5>
             <ul>
                 @foreach($profile['skills'] as $skill)
